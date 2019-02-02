@@ -2,6 +2,16 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    link(rel="stylesheet", href="/stylesheets/reveal.css")
+    link(rel="stylesheet", href="/stylesheets/theme/black.css")
+    block css
   body
-    block content
+    .reveal
+      .slides
+        section
+          p test
+      block content
+    script(src="/lib/js/head.min.js")
+    script(src="/javascripts/reveal.js")
+    block js
