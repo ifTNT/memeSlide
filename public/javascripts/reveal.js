@@ -5569,7 +5569,10 @@
 		// Registers a new shortcut to include in the help overlay
 		registerKeyboardShortcut: function( key, value ) {
 			keyboardShortcuts[key] = value;
-		}
+		},
+
+		//For dynamic loading slides
+		updateProgress: updateProgress
 	};
 
 	return Reveal;
